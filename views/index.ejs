@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <!-- <form>
+        <input type='text' placeholder='Enter Message'>
+        <button type='submit'>Send</button>
+      </form> -->  
+      <div class="container" id="chatbox">
+        <div id="msg-stream">
+        </div>
+        <form action="">
+          <input id="m" autocomplete="off" /><button id="send" class="btn-primary pull-right">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/socket-client.js"></script>
+  </body>
+</html>
